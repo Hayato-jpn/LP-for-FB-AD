@@ -1,0 +1,220 @@
+/*body {*/
+/*  background-repeat: no-repeat;*/
+/*  background-position: center;*/
+/*  background-color: #000;*/
+/*  color: #fff;*/
+/*}*/
+
+/*.navbar-laravel {*/
+/*  background-color: #000;*/
+/*  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);*/
+/*}*/
+
+/*.navbar-brand {*/
+/*  color: #fff !important;*/
+/*}*/
+
+/*.nav-link {*/
+/*  color: #fff !important;*/
+/*}*/
+
+/*.table-dark {*/
+/*  color: #fff;*/
+/*}*/
+
+/*.list-group-item {*/
+/*  border-color: #fff;*/
+/*  background-color: #000;*/
+/*}*/
+
+/*.login-box {*/
+/*  background-color: rgba(0, 0, 0, 0);*/
+/*}*/
+
+/*.login-header {*/
+/*  background-color: rgba(0, 0, 0, 0.25);*/
+/*}*/
+
+/*.login-body {*/
+/*  background-color: rgba(0, 0, 0, 0.25);*/
+/*}*/
+
+.container {
+  overflow: auto;
+  scroll-snap-type: y;
+  height: 100vh;
+}
+.area {
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
+/* General Styling */
+body {
+  font-size: 4rem;
+  text-align: center;
+  color: #fff;
+}
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 10px;
+  color: black;
+  /*margin-bottom: 2rem;*/
+}
+/*.area:nth-child(even) {*/
+/*  background-color: #0db;*/
+/*}*/
+/*.area:nth-child(odd) {*/
+/*  background-color: #0bd;*/
+/*}*/
+
+.top-pic {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.bottom-pic {
+  width: 100%;
+}
+
+.box27 {
+    position: relative;
+    /*padding: 0.5em 1em;*/
+    padding-top: 30px;
+    width: 95%;
+    margin: 0 auto;
+    border: solid 3px red;
+    border-radius: 10px;
+}
+.box27 .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -27px;
+    left: -3px;
+    padding: 0 9px;
+    margin-left: 10px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 17px;
+    background: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+}
+.box27 li {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.pic {
+  width: 95%;
+}
+
+.ranking {
+  color: red;/*文字色*/
+  font-size: 20px;
+  text-align: left;
+  padding-left: 10px;
+  margin-top: 15px;
+  margin-left: 10px;
+  background: transparent;/*背景透明に*/
+  border-left: solid 7px red;/*左線*/
+}
+
+.box26 {
+    position: relative;
+    /*margin: 2em 0;*/
+    /*padding: 0.5em 1em;*/
+    width: 95%;
+    margin: 20px auto;
+    border: solid 3px #95ccff;
+    border-radius: 8px;
+}
+.box26 .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -13px;
+    left: 10px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 19px;
+    background: #FFF;
+    color: #95ccff;
+    font-weight: bold;
+}
+.box26 li {
+    color: grey;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.li-top {
+  padding-top: 15px;
+}
+
+.text {
+  color: orange;
+  font-size: 17px;
+}
+
+@keyframes shiny {
+    0% {
+        transform: scale(0) rotate(25deg);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1) rotate(25deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(50) rotate(25deg);
+        opacity: 0;
+    }
+}
+
+.app {
+    width: 90%;
+    margin: 5px auto;
+    padding: 20px;
+    line-height: 1.5;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: 2px 2px 5px 0px rgba(200,200,200,1);
+}
+
+.shiny-btn {
+    position: relative;
+    display: block;
+    width: 100%;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: red;
+    border-radius: 10px;
+    /*cursor: pointer;*/
+    overflow: hidden;
+}
+
+.shiny-btn::after {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 50px;
+    height: 50px;
+    background-image: linear-gradient(100deg,  rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 1) 100%, rgba(255, 255, 255, 0) 0%);
+    animation-name: shiny;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
